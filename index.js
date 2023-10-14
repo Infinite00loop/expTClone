@@ -16,7 +16,7 @@ function tracker(){
 
     
     var newList=document.createElement('li');
-    var text=expAmount_+" - "+categ_+" - "+desc_+" - ";
+    var text=expAmount_+" - "+desc_+" - "+categ_+" - ";
     newList.appendChild(document.createTextNode(text));
     var delButton=document.createElement('button');
     delButton.className='delete';
