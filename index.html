@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
-    <form>
+    <div class="container">
+    <div id="main" class="card card-body">
+    <form class="form-inline mb-3">
         <label>Choose expense amount:</label>
-        <input id="id1" type="number" />
+        <input id="id1" class="form-control mr-2" type="number" />
         <label>Choose description:</label>
-        <input id="id2" type="text" />
+        <input id="id2" class="form-control mr-2" type="text" />
         <label>Choose a category:</label>
-        <select name="category" id="id3">
+        <select name="category" class="form-control mr-2" id="id3">
             <option value="Fuel">Fuel</option>
             <option value="food">food</option>
             <option value="electricity">electricity</option>
             <option value="movies">movies</option>
         </select>
-        <input id="id4" type="button" onclick="tracker()" value="Add Expense">
+        <input id="id4" type="button" class="btn btn-dark" onclick="tracker()" value="Add Expense">
     </form>
-    <ul id="list-items"></ul>
+    <ul id="list-items" class="list-group"></ul>
+    </div>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
